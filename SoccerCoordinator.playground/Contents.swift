@@ -193,7 +193,7 @@ var raptors: [Dictionary<String, Any>] = []
 //seperate different experience membr into above 3 team
 func playerBelongTeam (targetArray: [Dictionary<String, Any>]){
     for i in 0..<targetArray.count {
-        let player = experiencedPlayers[i]
+        let player = targetArray[i]
         let mod = i % 3
         switch(mod){
         case 0:raptors.append(player);break;
