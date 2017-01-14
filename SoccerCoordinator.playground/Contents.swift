@@ -205,13 +205,23 @@ func playerBelongTeam (targetArray: [Dictionary<String, Any>]){
 playerBelongTeam(targetArray: experiencedPlayers);
 playerBelongTeam(targetArray: noExperiencedPlayers);
 
+
+var letters: [String] = []
+
 //print out the letter by teamArray, teamName and teamTargetTime
 func printByArray (targetArray: [Dictionary<String, Any>], teamName:String, teamTargetTime:String){
     for player in targetArray {
-        print("Dear \(player[guardianNames]!), your child, \(player[name]!), has been placed on the team \(teamName). The first practice for the \(teamName) is \(teamTargetTime).")
+        letters.append("Dear \(player[guardianNames]!), your child, \(player[name]!), has been placed on the team \(teamName). The first practice for the \(teamName) is \(teamTargetTime).")
     }
 }
 
 printByArray(targetArray: sharks, teamName: "Sharks", teamTargetTime: "March 17, 1pm");
 printByArray(targetArray: dragons, teamName: "Dragons", teamTargetTime: "March 17, 3pm");
 printByArray(targetArray: raptors, teamName: "Raptors", teamTargetTime: "March 18, 1pm");
+
+
+//printout the letter
+for letter in letters {
+    print(letters)
+}
+
