@@ -222,6 +222,6 @@ printByArray(targetArray: raptors, teamName: "Raptors", teamTargetTime: "March 1
 
 //printout the letter
 for letter in letters {
-    print(letters)
+    print(letter)
 }
 
